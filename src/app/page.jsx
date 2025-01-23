@@ -13,7 +13,7 @@ const ThumbnailDownloader = () => {
     setThumbnails(null);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/get-thumbnails", {
+      const response = await axios.post("https://back-night.vercel.app/api/get-thumbnails", {
         videoUrl,
       });
       setThumbnails(response.data.thumbnails);
@@ -24,7 +24,7 @@ const ThumbnailDownloader = () => {
 
   const handleDownload = async (url) => {
     try {
-      const response = await axios.get("http://localhost:5000/api/download", {
+      const response = await axios.get("https://back-night.vercel.app/api/download", {
         params: { url },
         responseType: "blob",
       });
