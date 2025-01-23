@@ -26,5 +26,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soloprime9/Nightf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soloprime9/Nightf/issues"
+  },
+  "homepage": "https://github.com/soloprime9/Nightf#readme"
 }
