@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 
 
 export const metadata = {
-  title: "HD YouTube Thumbnail Downloader - Free HD Quality Thumbnails | Okhatrimaza",
+  title: "YouTube Thumbnail Downloader",
   description:
     "Download high-definition YouTube thumbnails instantly with our free HD YouTube Thumbnail Downloader. Perfect for content creators, digital marketers, and SEO enthusiasts. Boost your content's visual appeal with top-quality thumbnails in seconds.",
   keywords: [
