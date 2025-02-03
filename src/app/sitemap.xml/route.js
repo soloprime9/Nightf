@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+export async function GET() {
   const siteUrl = "https://www.okhatrimaza.shop";
 
   // Manually update this list with new pages
@@ -28,6 +28,9 @@ export default async function handler(req, res) {
     .join("")}
 </urlset>`;
 
-  res.setHeader("Content-Type", "application/xml");
-  res.status(200).end(sitemap);
+  return new Response(sitemap, {
+    headers: {
+      "Content-Type": "application/xml",
+    },
+  });
 }
