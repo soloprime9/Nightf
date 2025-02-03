@@ -1,6 +1,6 @@
-module.exports = {
+export default {
   experimental: {
-    externalDir: true, // Keep this if necessary
+    externalDir: true,
   },
   webpack(config) {
     config.module.rules.push({
