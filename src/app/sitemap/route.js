@@ -2,7 +2,7 @@ import { GetServerSideProps } from 'next';
 
 const Sitemap = () => null;
 
-export async function getServerSideProps({ res }) {
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   const routes = [
     { url: '/', changefreq: 'daily', priority: 1.0 },
     { url: '/about', changefreq: 'monthly', priority: 0.5 },
@@ -27,6 +27,6 @@ export async function getServerSideProps({ res }) {
   return {
     props: {},
   };
-}
+};
 
 export default Sitemap;
