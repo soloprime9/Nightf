@@ -29,7 +29,9 @@ export const metadata = {
     "video thumbnail downloader"
   ],
   icons: {
-    icon: "/favicon.ico" // Ensure this file exists in your public folder
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "HD YouTube Thumbnail Downloader - Free HD Quality Thumbnails",
