@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "YouTube Thumbnail Downloader",
   description:
-    "Download high-definition YouTube thumbnails instantly with our free HD YouTube Thumbnail Downloader. Perfect for content creators, digital marketers, and SEO enthusiasts. Boost your content's visual appeal with top-quality thumbnails in seconds.",
+    "This application let you download thumbnails of all quality. Just paste the URL of the thumbnail video in the below input and click Get Thumbnail Image.",
   keywords: [
     "HD YouTube Thumbnail Downloader",
     "HD thumbnails",
