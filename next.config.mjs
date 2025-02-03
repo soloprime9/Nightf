@@ -1,5 +1,5 @@
-export default {
-  webpack(config) {
+module.exports = {
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.js$/,
       loader: 'babel-loader',
@@ -9,6 +9,8 @@ export default {
       exclude: /node_modules/,
     });
     config.experiments = { ...config.experiments, ...{ topLevelAwait: true } };
+    config.output = { ...config.output, ...{ publicPath: '' } };
     return config;
   },
+  target: 'server',
 };
