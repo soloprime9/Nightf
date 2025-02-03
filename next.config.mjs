@@ -1,8 +1,7 @@
-export default {
-    experimental: {
-      externalDir: true,
-      babel: {
-        sourceType: 'module',
-      },
-    },
-  };
+const nextConfig = {
+  experimental: {
+    externalDir: true,  // Keep this if needed
+  },
+};
+
+export default nextConfig;
