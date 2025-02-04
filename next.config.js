@@ -3,16 +3,5 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: 'standalone', // Ensure correct output mode
-
-  async redirects() {
-    return [
-      {
-        source: "/:path((?!_next|favicon.ico|robots.txt|sitemap.xml).*)", 
-        destination: "/",
-        permanent: false, 
-      },
-    ];
-  },
 };
-
 module.exports = nextConfig;
