@@ -15,4 +15,4 @@ const nextConfig = {
   output: "standalone", // Standalone output for Vercel
 };
 
-module.exports = nextConfig;
+export default nextConfig;
