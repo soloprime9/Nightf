@@ -7,9 +7,9 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*", // Matches all unknown paths
+        source: "/((?!_next|favicon.ico|robots.txt|sitemap.xml).*)", 
         destination: "/",
-        permanent: false, // Use `true` for a permanent 301 redirect
+        permanent: false, 
       },
     ];
   },
