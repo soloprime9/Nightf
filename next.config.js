@@ -7,7 +7,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/((?!_next|favicon.ico|robots.txt|sitemap.xml).*)", 
+        source: "/:path((?!_next|favicon.ico|robots.txt|sitemap.xml).*)", 
         destination: "/",
         permanent: false, 
       },
