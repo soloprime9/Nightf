@@ -41,41 +41,56 @@ const ThumbnailDownloader = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1>YouTube Thumbnail Downloader</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Enter YouTube Video URL"
-          value={videoUrl}
-          onChange={(e) => setVideoUrl(e.target.value)}
-          style={{ width: "300px", padding: "10px", marginBottom: "10px" }}
-        />
-        <br />
-        <button type="submit" style={{ padding: "10px 20px" }}>
-          Get Thumbnails
-        </button>
-      </form>
+    <div className="text-start p-2" >
+      <header className="lg:flex  lg:justify-between text-center pb-5">
+      <h1 className="text-2xl font-bold">YouTube Thumbnail Downloader</h1>
+      <div className="flex justify-center lg:gap-8 gap-2">
+        <p>About Us</p>
+        <p>Policy</p>
+        <p>Contact Us</p>
+      </div>
+      </header>
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      <div className="border-2 mb-40"></div>
 
-      {thumbnails && (
-        <div style={{ marginTop: "20px" }}>
-          <h2>Thumbnails:</h2>
-          {Object.entries(thumbnails).map(([key, url]) => (
-            <div key={key} style={{ marginBottom: "20px" }}>
-              <p>{key.toUpperCase()}</p>
-              <img src={url} alt={key} style={{ maxWidth: "300px", display: "block", margin: "0 auto" }} />
-              <button
-                onClick={() => handleDownload(url)}
-                style={{ padding: "10px 20px", marginTop: "10px", cursor: "pointer" }}
-              >
-                Download {key.toUpperCase()} Thumbnail
+      <div className="text-center m-10 ">
+            <p className="text-evenly lg:mr-20 lg:ml-20 mb-6">Just Paste YouTube Video Link in Box, click on Get Thumbnail Button. A while you can download High Quality YouTube Thumbnail According to Your Choice</p>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Enter YouTube Video URL"
+                value={videoUrl}
+                onChange={(e) => setVideoUrl(e.target.value)}
+                className="w-full p-2 mb-5 border-2"
+              />
+              <br />
+              <button type="submit" className="p-2 border-2">
+                Get Thumbnails
               </button>
-            </div>
-          ))}
+            </form>
+
+            {error && <p className="text-red-500">{error}</p>}
+
+            {thumbnails && (
+              <div className="mt-4 ">
+                <h2>Thumbnails:</h2>
+                {Object.entries(thumbnails).map(([key, url]) => (
+                  <div key={key} className="mb-10 ">
+                    <div className="grid justify-center mb-4 h-5">
+                    <p className="font-bold border-2 w-20  text-black bg-blue-200 ">{key.toUpperCase()}</p>
+                    </div>
+                    <img src={url} alt={key} className="w-100 h-60 block m-auto border-2 rounded-sm shadow-md border-blue-500" />
+                    <button
+                      onClick={() => handleDownload(url)}
+                      className="p-2 mt-5 pointer border-4 bg-yellow-300 font-bold rounded-sm border-black"
+                    >
+                      Download {key.toUpperCase()} Thumbnail
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
         </div>
-      )}
     </div>
   );
 };
