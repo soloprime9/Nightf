@@ -53,7 +53,7 @@ const ThumbnailDownloader = () => {
 
       <div className="border-2 mb-40"></div>
 
-      <div className="text-center m-10 ">
+      <div className="text-center m-5 ">
             <p className="text-evenly lg:mr-20 lg:ml-20 mb-6">Just Paste YouTube Video Link in Box, click on Get Thumbnail Button. A while you can download High Quality YouTube Thumbnail According to Your Choice</p>
             <form onSubmit={handleSubmit}>
               <input
