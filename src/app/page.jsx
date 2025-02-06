@@ -43,7 +43,7 @@ const ThumbnailDownloader = () => {
   return (
     <div className="text-start p-2" >
      <header className="lg:flex lg:justify-between text-center pb-5">
-  <h1 className="text-2xl font-bold">YouTube Thumbnail Downloader</h1>
+  <a href="https://www.okhatrimaza.shop" className="text-2xl font-bold">YouTube Thumbnail Downloader</a>
   <div className="flex justify-center lg:gap-8 gap-2">
     <a href="https://www.okhatrimaza.shop/about" className="hover:text-blue-600">About Us</a>
     <a href="https://www.okhatrimaza.shop/privacy" className="hover:text-blue-600">Policy</a>
