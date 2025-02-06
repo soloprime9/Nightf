@@ -3,6 +3,15 @@ import React from "react";
 const About = () => {
   return (
     <div>
+      <header className="lg:flex lg:justify-between text-center pb-5">
+  <h1 className="text-2xl font-bold">YouTube Thumbnail Downloader</h1>
+  <div className="flex justify-center lg:gap-8 gap-2">
+    <a href="https://www.okhatrimaza.shop/about" className="hover:text-blue-600">About Us</a>
+    <a href="https://www.okhatrimaza.shop/privacy" className="hover:text-blue-600">Policy</a>
+    <a href="https://www.okhatrimaza.shop/contact" className="hover:text-blue-600">Contact Us</a>
+  </div>
+</header>
+      <div className ="m-5">
       <h2><b>What is Our Goal?</b></h2>
       <p>There are millions of websites created every day, and much fake content is spread on the internet.</p>
       <p>Our main goal is to provide 100% original and safe content that enhances the user experience on the web.</p>
@@ -40,6 +49,7 @@ const About = () => {
       <h3><b>Admin's Contact Information</b></h3>
       <p>If you have any questions, feel free to contact us at <b>five@gmail.com</b>.</p>
     </div>
+      </div>
   );
 };
 
