@@ -79,7 +79,7 @@ const ThumbnailDownloader = () => {
                     <div className="grid justify-center mb-4 h-5">
                     <p className="font-bold border-2 w-20  text-black bg-blue-200 ">{key.toUpperCase()}</p>
                     </div>
-                    <img src={url} alt={key} className="w-100 h-60 block m-auto border-2 rounded-sm shadow-md border-blue-500" />
+                    <img src={url} alt={key} className="w-200 h-60 block m-auto border-2 rounded-sm shadow-md border-blue-500" />
                     <button
                       onClick={() => handleDownload(url)}
                       className="p-2 mt-5 pointer border-4 bg-yellow-300 font-bold rounded-sm border-black"
