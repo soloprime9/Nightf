@@ -3,14 +3,23 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <header className="lg:flex lg:justify-between text-center pb-5">
-  <h1 className="text-2xl font-bold">YouTube Thumbnail Downloader</h1>
+      <head>
+  <title>Free About Us Page Generator Tool - SEO Pavan Agrawal</title>
+  <meta name="description" content="This tool creates about us page details in simple words and can be customized if required. Best about us page generator tool for beginners." />
+  <meta name="keywords" content="about us page generator, free tool, SEO, Pavan Agrawal" />
+</head>
+
+<header className="lg:flex lg:justify-between text-center pb-5">
+  <h1 className="text-2xl font-bold">
+    <a href="https://www.okhatrimaza.shop" className="text-2xl font-bold">Free About Us Page Generator Tool - SEO Pavan Agrawal</a>
+  </h1>
   <div className="flex justify-center lg:gap-8 gap-2">
     <a href="https://www.okhatrimaza.shop/about" className="hover:text-blue-600">About Us</a>
     <a href="https://www.okhatrimaza.shop/privacy" className="hover:text-blue-600">Policy</a>
     <a href="https://www.okhatrimaza.shop/contact" className="hover:text-blue-600">Contact Us</a>
   </div>
 </header>
+      
       <div className ="m-5">
       <h2><b>What is Our Goal?</b></h2>
       <p>There are millions of websites created every day, and much fake content is spread on the internet.</p>
