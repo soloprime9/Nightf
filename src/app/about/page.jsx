@@ -16,7 +16,7 @@ const About = () => {
   <div className="flex justify-center lg:gap-8 gap-2">
     <a href="https://www.okhatrimaza.shop/about" className="hover:text-blue-600">About Us</a>
     <a href="https://www.okhatrimaza.shop/privacy" className="hover:text-blue-600">Policy</a>
-    <a href="https://www.okhatrimaza.shop/contact" className="hover:text-blue-600">Contact Us</a>
+    <a href="https://reduceimages-sigma.vercel.app/" className="hover:text-blue-600">Contact Us</a>
   </div>
 </header>
       
